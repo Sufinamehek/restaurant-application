@@ -1,0 +1,99 @@
+/* src/styles/experience.css */
+
+.experience {
+  position: relative;
+  height: 200vh; /* scrollable section */
+}
+
+/* Sticky Background Image */
+.sticky-bg {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Overlay for readability */
+.sticky-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Text Content */
+.content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+/* Heading */
+.content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ===================== */
+/* RESPONSIVE STYLING */
+/* ===================== */
+@media (max-width: 1024px) {
+  .content {
+    width: 75%;
+  }
+
+  .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 85%;
+    top: 18%;
+  }
+
+  .content h2 {
+    font-size: 1.9rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 90%;
+    top: 15%;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+}

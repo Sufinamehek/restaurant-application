@@ -1,0 +1,147 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(to right, #000000, #C8A96A);
+  color: #eee;
+  padding: 60px 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== GRID ===== */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* ===== BRAND ===== */
+.footer-brand h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #C8A96A; /* GOLD */
+}
+
+.footer-brand p {
+  color: #aaa;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ===== HEADINGS ===== */
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #C8A96A; /* GOLD */
+  letter-spacing: 1px;
+}
+
+/* ===== LINKS ===== */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: #C8A96A; /* GOLD hover */
+  transform: translateX(3px);
+}
+
+/* ===== CONTACT ===== */
+.footer-contact p {
+  margin-bottom: 10px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #C8A96A; /* GOLD */
+  transform: scale(1.2);
+}
+
+/* ===== BOTTOM ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(200, 169, 106, 0.2); /* soft gold line */
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* ===== FOOTER LINKS STYLING ===== */
+.footer a {
+  color: #aaa; /* default footer text color */
+  text-decoration: none; /* remove underline */
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #C8A96A; /* gold on hover */
+  transform: translateX(3px);
+}
+
+/* ===== PHONE & EMAIL ===== */
+.footer-contact a {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #C8A96A;
+  transform: translateX(3px);
+}
+
+/* ===== SOCIAL ICONS ===== */
+.footer-social a {
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #C8A96A;
+  transform: scale(1.2);
+}

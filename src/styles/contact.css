@@ -1,0 +1,189 @@
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.about-page {
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO */
+.about-heroo {
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-h {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+}
+
+.overlay-h h1 {
+  color: white;
+  font-size: 60px;
+}
+
+/* BLOCK */
+.about-block {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #a52a2a;
+  margin-bottom: 40px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #C8A96A;
+}
+
+/* SECTION */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.about-img img {
+  width: 100%;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  
+  color: black;
+}
+
+/* CONTACT CONTENT */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CONTACT ITEM */
+.contact-item {
+  display: flex;
+  align-items: right;
+  gap: 15px;
+  font-size: 16px;
+}
+
+/* ICON */
+.contact-item svg {
+  font-size: 20px;
+  color: #C8A96A;
+}
+
+/* TEXT */
+.contact-item span strong {
+  color: #C8A96A;
+}
+
+/* FORM */
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  background: #C8A96A;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #C8A96A;
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(to right, #000000, #C8A96A);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+/* SECTION */
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* LEFT SIDE (INFO) */
+.contact-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 40px;
+}
+
+/* RIGHT SIDE (FORM) */
+.contact-form-box {
+  flex: 1;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* INTRO TEXT */
+.contact-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

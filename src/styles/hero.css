@@ -1,0 +1,71 @@
+/* src/styles/hero.css */
+
+.carousel-img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+
+  /* Smooth + sharp zoom */
+  transform: scale(1.05);
+  transition: transform 6s ease-in-out;
+
+  /* Fix blur issues */
+  backface-visibility: hidden;
+  image-rendering: auto;
+  will-change: transform;
+}
+
+/* Apply zoom only when slide is active */
+.carousel-item.active .carousel-img {
+  transform: scale(1.1);
+}
+
+/* Overlay text */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay .since-text {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-overlay .cta-btn {
+  background: linear-gradient(to right, #000000, #C8A96A);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Great+Vibes&display=swap');
+
+
+
+.hero-overlay p {
+  font-family: 'Great Vibes', cursive; /* cursive subtitle */
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+}

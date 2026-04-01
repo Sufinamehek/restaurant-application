@@ -1,0 +1,141 @@
+/* ===== MENU SECTION ===== */
+.menu {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* ===== GRID SYSTEM ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* ===== CARD ===== */
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 500px;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== IMAGE ===== */
+.menu-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* ===== CONTENT ===== */
+.menu-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.menu-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* ===== ACTIONS ===== */
+.menu-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 15px;
+}
+
+/* Heart Icon */
+.menu-actions .icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.menu-actions .icon:hover {
+  color: red;
+}
+
+.menu-actions .icon.active {
+  color: red;
+}
+
+/* Add Button */
+.menu-actions button {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu-actions button:hover {
+  background: #e14c50;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .menu h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .menu {
+    padding: 20px 15px;
+  }
+
+  .menu h2 {
+    font-size: 1.8rem;
+  }
+
+  .menu-card img {
+    height: 180px;
+  }
+
+  .menu-actions {
+    padding: 10px;
+  }
+
+  .menu-actions button {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+.order-btn {
+  background: linear-gradient(to right, #000000, #C8A96A);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

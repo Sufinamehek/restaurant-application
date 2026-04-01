@@ -1,0 +1,78 @@
+/* src/styles/reservationPage.css */
+
+.reservation-page {
+  padding: 80px 40px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.reservation-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Layout */
+.reservation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* FORM */
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+/* Focus effect */
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  border-color: #c59d5f;
+}
+
+/* Button */
+.reservation-form button {
+  background: #c59d5f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reservation-form button:hover {
+  background: #a67c3b;
+}
+
+/* IMAGE */
+.reservation-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .reservation-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-img img {
+    height: 300px;
+  }
+}

@@ -1,0 +1,124 @@
+/* src/styles/navbar.css */
+
+/* .navbar {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease; */
+  /* background: transparent; starts transparent */
+  /* padding: 20px 0; */
+
+/* Navbar */
+.navbar {
+  position: absolute;
+
+  top: 0; /* no space from top */
+  width: 100%;
+  z-index: 10;
+
+ background: linear-gradient(to right, #000000, #C8A96A);
+  padding: 12px 30px;
+}
+
+/* Container */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar .logo {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Nav links */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Icons */
+.navbar .nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .icon {
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Cart badge */
+.navbar .cart-icon {
+  position: relative;
+}
+
+.navbar .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* ================= MOBILE ================= */
+
+.hamburger {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  background: #000;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.notification {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  opacity: 0.9;
+  z-index: 999;
+  transition: all 0.3s ease;
+}

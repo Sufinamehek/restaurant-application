@@ -1,0 +1,77 @@
+/* src/styles/highlights.css */
+
+.highlights {
+  padding: 60px 40px;
+
+}
+
+.highlight-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* Hover effect */
+.hover-card:hover img {
+  transform: scale(1.1);
+}
+
+.hover-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Static (middle card always visible) */
+.static-card .overlay {
+  opacity: 1;
+}
+
+/* Text styling */
+.overlay p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .highlight-container {
+    grid-template-columns: 1fr;
+  }
+}
+
