@@ -53,7 +53,7 @@ const handleAddToCart = (e) => {
     addToCart(dish);       // add to cart
   }}
 >
-  Add to Cart
+ Order Now
 </button>
       </div>
     </div>

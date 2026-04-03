@@ -87,7 +87,7 @@ function DishDetail() {
               <button onClick={handleIncrease}>+</button>
 
               <button className="add-cart" onClick={handleAddToCart} style={{ marginLeft: "20px" }}>
-                Add to Cart
+               Order Now
               </button>
 
               <button className="wishlist" onClick={() => addToWishlist(dish)}>
