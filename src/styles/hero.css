@@ -6,8 +6,7 @@
   object-fit: cover;
 
   /* Smooth + sharp zoom */
-  transform: scale(1.05);
-  transition: transform 6s ease-in-out;
+
 
   /* Fix blur issues */
   backface-visibility: hidden;
